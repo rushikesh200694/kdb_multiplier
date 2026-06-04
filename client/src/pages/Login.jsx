@@ -42,7 +42,16 @@ export default function Login() {
         await register(authForm.name, authForm.email, authForm.password);
       }
     } catch (err) {
-      setAuthError(err.response?.data?.message || 'Authentication failed. Please verify your credentials.');
+      console.error('Auth error details:', err);
+      const serverMessage = err.response?.data?.message;
+      const serverError = err.response?.data?.error;
+      const statusText = err.response?.statusText;
+      const statusCode = err.response?.status;
+      setAuthError(
+        serverMessage 
+          ? `${serverMessage}${serverError ? ` - ${serverError}` : ''}` 
+          : `Error ${statusCode || 'unknown'}: ${statusText || 'Network error / Server crashed'}. Please check console/logs.`
+      );
     } finally {
       setAuthLoading(false);
     }
