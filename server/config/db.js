@@ -25,12 +25,12 @@ export let useFallback = false;
 export const connectDB = async () => {
   try {
     mongoose.set('strictQuery', false);
-    const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/kbd-multiplier';
-    console.log(`Attempting to connect to MongoDB at: ${mongoUri}`);
+    // Accept both MONGO_URI and MONGODB_URI (common naming difference)
+    const mongoUri = process.env.MONGO_URI || process.env.MONGODB_URI || 'mongodb://localhost:27017/kbd-multiplier';
+    console.log(`Attempting to connect to MongoDB...`);
     
-    // Quick timeout to fallback fast if mongo is not running
     const conn = await mongoose.connect(mongoUri, {
-      serverSelectionTimeoutMS: 2000 
+      serverSelectionTimeoutMS: 10000 // 10s for production cold starts
     });
     console.log(`MongoDB Connected: ${conn.connection.host}`);
     useFallback = false;
