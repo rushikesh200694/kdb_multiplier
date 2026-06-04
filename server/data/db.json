@@ -1,0 +1,364 @@
+{
+  "products": [
+    {
+      "_id": "t6m7jwcmpwf1w3t",
+      "name": "KBD Super Organic Fertilizer",
+      "category": "Fertilizers",
+      "shortDescription": "Premium organic fertilizer for all crops. Boosts plant growth naturally with essential nutrients and microbes.",
+      "longDescription": "KBD Super Organic Fertilizer is a scientifically formulated blend of natural organic matter, beneficial microorganisms, and essential plant nutrients. Suitable for all types of crops including vegetables, fruits, and cereals. Improves soil health over time and promotes sustainable farming practices.",
+      "prices": [
+        {
+          "quantity": 1,
+          "unit": "kg",
+          "price": 150
+        },
+        {
+          "quantity": 5,
+          "unit": "kg",
+          "price": 650
+        },
+        {
+          "quantity": 25,
+          "unit": "kg",
+          "price": 2800
+        }
+      ],
+      "images": [],
+      "ratings": 4.5,
+      "reviews": 28,
+      "createdAt": "2026-06-02T09:09:28.649Z",
+      "updatedAt": "2026-06-02T09:09:28.650Z"
+    },
+    {
+      "_id": "aaikx59mpwf1w3u",
+      "name": "Multilayer Crop Protection Film",
+      "category": "Multilayers",
+      "shortDescription": "High-quality agricultural mulch film for weed control and moisture retention in all field conditions.",
+      "longDescription": "Our Multilayer Crop Protection Film provides excellent weed suppression, moisture conservation, and soil temperature regulation. Made from high-quality UV-stabilized polyethylene, it is designed for durability in all weather conditions and is suitable for vegetables, fruits, and row crops.",
+      "prices": [
+        {
+          "quantity": 1,
+          "unit": "kg",
+          "price": 220
+        },
+        {
+          "quantity": 10,
+          "unit": "kg",
+          "price": 1900
+        }
+      ],
+      "images": [],
+      "ratings": 4.3,
+      "reviews": 15,
+      "createdAt": "2026-06-02T09:09:28.650Z",
+      "updatedAt": "2026-06-02T09:09:28.650Z"
+    },
+    {
+      "_id": "4yit2wxmpwf1w3v",
+      "name": "Ayurvedic Plant Immunity Booster",
+      "category": "Ayurvedic Medicines",
+      "shortDescription": "Natural Ayurvedic formula to enhance plant immunity and resistance to diseases and pests.",
+      "longDescription": "This proprietary Ayurvedic blend combines ancient herbal wisdom with modern agricultural science. Contains neem extract, tulsi, and other potent herbs that naturally boost plant immunity, improve resistance to fungal and bacterial diseases, and promote overall plant health without harmful chemicals.",
+      "prices": [
+        {
+          "quantity": 500,
+          "unit": "ml",
+          "price": 180
+        },
+        {
+          "quantity": 1,
+          "unit": "litre",
+          "price": 320
+        },
+        {
+          "quantity": 5,
+          "unit": "litre",
+          "price": 1400
+        }
+      ],
+      "images": [],
+      "ratings": 4.7,
+      "reviews": 42,
+      "createdAt": "2026-06-02T09:09:28.651Z",
+      "updatedAt": "2026-06-02T09:09:28.651Z"
+    },
+    {
+      "_id": "irdtm4ompwf1w3w",
+      "name": "KBD Herbal Neem Soap",
+      "category": "Soaps",
+      "shortDescription": "Organic neem soap for personal hygiene and pest control. Safe for farmers, effective against insects.",
+      "longDescription": "KBD Herbal Neem Soap is a multi-purpose organic soap made from cold-pressed neem oil and natural herbs. It is perfect for farmers as it provides excellent hygiene after field work while also acting as a natural insect repellent. Free from harmful chemicals and safe for all skin types.",
+      "prices": [
+        {
+          "quantity": 1,
+          "unit": "piece",
+          "price": 45
+        },
+        {
+          "quantity": 6,
+          "unit": "piece",
+          "price": 240
+        },
+        {
+          "quantity": 12,
+          "unit": "piece",
+          "price": 450
+        }
+      ],
+      "images": [],
+      "ratings": 4.2,
+      "reviews": 33,
+      "createdAt": "2026-06-02T09:09:28.652Z",
+      "updatedAt": "2026-06-02T09:09:28.652Z"
+    },
+    {
+      "_id": "bb6ez5dmpwf1w3x",
+      "name": "Organic Compost Enricher",
+      "category": "Organic Products",
+      "shortDescription": "Concentrated compost enricher for improving soil fertility and microbial activity.",
+      "longDescription": "Our Organic Compost Enricher is a concentrated blend of humic acid, fulvic acid, and beneficial microorganisms. It supercharges any compost or soil with beneficial bacteria and fungi, dramatically improving nutrient availability and soil structure. Ideal for organic farming certification requirements.",
+      "prices": [
+        {
+          "quantity": 1,
+          "unit": "kg",
+          "price": 280
+        },
+        {
+          "quantity": 5,
+          "unit": "kg",
+          "price": 1200
+        }
+      ],
+      "images": [],
+      "ratings": 4.6,
+      "reviews": 19,
+      "createdAt": "2026-06-02T09:09:28.653Z",
+      "updatedAt": "2026-06-02T09:09:28.653Z"
+    },
+    {
+      "_id": "7cgcxppmpwf1w3z",
+      "name": "Crop Nutrient Micronutrient Mix",
+      "category": "Crop Nutrients",
+      "shortDescription": "Complete micronutrient mix for correcting deficiencies in all major crops.",
+      "longDescription": "KBD Crop Nutrient Micronutrient Mix is a balanced combination of zinc, boron, manganese, copper, iron, and molybdenum in chelated form for maximum absorption. Corrects multiple micronutrient deficiencies simultaneously, prevents yellowing of leaves, and improves fruit quality and yield.",
+      "prices": [
+        {
+          "quantity": 250,
+          "unit": "g",
+          "price": 120
+        },
+        {
+          "quantity": 500,
+          "unit": "g",
+          "price": 220
+        },
+        {
+          "quantity": 1,
+          "unit": "kg",
+          "price": 400
+        }
+      ],
+      "images": [],
+      "ratings": 4.4,
+      "reviews": 24,
+      "createdAt": "2026-06-02T09:09:28.655Z",
+      "updatedAt": "2026-06-02T09:09:28.655Z"
+    },
+    {
+      "_id": "uiq2zg9mpwf1w40",
+      "name": "Bio Pesticide Spray",
+      "category": "Pest Control",
+      "shortDescription": "Eco-friendly bio-pesticide derived from natural sources for effective pest management.",
+      "longDescription": "Our Bio Pesticide Spray is derived from naturally occurring microorganisms and plant extracts that effectively control a wide range of agricultural pests including aphids, whiteflies, thrips, and caterpillars. Safe for beneficial insects, birds, and the environment. Zero pre-harvest interval.",
+      "prices": [
+        {
+          "quantity": 500,
+          "unit": "ml",
+          "price": 250
+        },
+        {
+          "quantity": 1,
+          "unit": "litre",
+          "price": 450
+        },
+        {
+          "quantity": 5,
+          "unit": "litre",
+          "price": 2000
+        }
+      ],
+      "images": [],
+      "ratings": 4.1,
+      "reviews": 37,
+      "createdAt": "2026-06-02T09:09:28.656Z",
+      "updatedAt": "2026-06-02T09:09:28.656Z"
+    },
+    {
+      "_id": "doi6th0mpwf1w41",
+      "name": "Soil Health Improver",
+      "category": "Soil Improvement",
+      "shortDescription": "Restore depleted soils and improve water-holding capacity with this natural soil conditioner.",
+      "longDescription": "KBD Soil Health Improver is a unique blend of volcanic minerals, organic matter, and beneficial bacteria specifically designed to rehabilitate degraded agricultural soils. It improves soil structure, increases water retention by up to 40%, reduces compaction, and creates ideal conditions for root development.",
+      "prices": [
+        {
+          "quantity": 5,
+          "unit": "kg",
+          "price": 450
+        },
+        {
+          "quantity": 25,
+          "unit": "kg",
+          "price": 1800
+        }
+      ],
+      "images": [],
+      "ratings": 4.8,
+      "reviews": 51,
+      "createdAt": "2026-06-02T09:09:28.657Z",
+      "updatedAt": "2026-06-02T09:09:28.657Z"
+    }
+  ],
+  "visits": [
+    {
+      "_id": "4oda0a6mpgq6aau",
+      "title": "Manufacturing Unit Tour - Dhule",
+      "description": "Visit our state-of-the-art manufacturing facility in Dhule to see how our agricultural products are made with the highest quality standards.",
+      "location": "Dhule, Maharashtra",
+      "date": "2024-04-10",
+      "gallery": [],
+      "createdAt": "2026-05-22T09:36:30.630Z",
+      "updatedAt": "2026-05-22T09:36:30.630Z"
+    },
+    {
+      "_id": "k1dvxh5mpgq6aav",
+      "title": "Ayurvedic Plant Research Center",
+      "description": "Explore our research center dedicated to developing Ayurvedic solutions for modern agricultural challenges. See how traditional knowledge meets scientific innovation.",
+      "location": "Pune, Maharashtra",
+      "date": "2024-05-20",
+      "gallery": [],
+      "createdAt": "2026-05-22T09:36:30.631Z",
+      "updatedAt": "2026-05-22T09:36:30.631Z"
+    },
+    {
+      "_id": "w1ccj8hmpgq6aav",
+      "title": "Farmer Field Day - Jalgaon",
+      "description": "Annual farmer field day event in Jalgaon where hundreds of farmers come to learn about new agricultural techniques and product demonstrations.",
+      "location": "Jalgaon, Maharashtra",
+      "date": "2024-06-05",
+      "gallery": [],
+      "createdAt": "2026-05-22T09:36:30.631Z",
+      "updatedAt": "2026-05-22T09:36:30.631Z"
+    }
+  ],
+  "reviews": [
+    {
+      "_id": "be79da9mpw5k06l",
+      "productId": null,
+      "visitorName": "sdafds",
+      "visitorPhoto": "",
+      "rating": 5,
+      "reviewText": "sdfsdaffads",
+      "photos": [
+        "https://res.cloudinary.com/dk5b684e9/image/upload/v1780375414/kbd-multiplier/guih3k0nhko2t7t8vdhe.jpg"
+      ],
+      "isApproved": true,
+      "createdAt": "2026-06-02T04:43:37.581Z",
+      "updatedAt": "2026-06-02T05:15:11.757Z"
+    },
+    {
+      "_id": "gj79ja4mpw6oa09",
+      "productId": null,
+      "visitorName": "hjkhkjhk",
+      "visitorPhoto": "",
+      "rating": 5,
+      "reviewText": "jkjkhk",
+      "photos": [
+        "https://res.cloudinary.com/dk5b684e9/image/upload/v1780377295/kbd-multiplier/cbrrn4qzb24smbmrbfiz.jpg"
+      ],
+      "isApproved": true,
+      "createdAt": "2026-06-02T05:14:56.553Z",
+      "updatedAt": "2026-06-02T05:15:16.779Z"
+    }
+  ],
+  "orders": [
+    {
+      "_id": "289rqddmph00psp",
+      "customerName": "Neymar",
+      "customerPhone": "9422635409",
+      "address": "at post nakane tal dist dhule 424002",
+      "items": [
+        {
+          "productId": "lk0exqbmpgq6aan",
+          "name": "KBD Super Organic Fertilizer",
+          "quantity": 6,
+          "unit": "kg",
+          "price": 150
+        }
+      ],
+      "totalAmount": 900,
+      "status": "Pending",
+      "createdAt": "2026-05-22T14:12:06.937Z",
+      "updatedAt": "2026-05-22T14:12:06.937Z"
+    },
+    {
+      "_id": "86l610umpw6mli3",
+      "customerName": "Awez khan",
+      "customerPhone": "+919422634509",
+      "customerEmail": "awezkhan@gmail.com",
+      "address": "klkl",
+      "items": [
+        {
+          "productId": "t84hvnumpgq6aaq",
+          "name": "Organic Compost Enricher",
+          "quantity": 1,
+          "unit": "kg",
+          "price": 280
+        }
+      ],
+      "totalAmount": 280,
+      "status": "Pending",
+      "createdAt": "2026-06-02T05:13:38.139Z",
+      "updatedAt": "2026-06-02T05:13:38.140Z"
+    },
+    {
+      "_id": "g00yb1hmpwf0osg",
+      "customerName": "Awez khan",
+      "customerPhone": "9422634509",
+      "customerEmail": "awezkhan@gmail.com",
+      "address": "jhjkjhjbbm",
+      "items": [
+        {
+          "productId": "t84hvnumpgq6aaq",
+          "name": "Organic Compost Enricher",
+          "quantity": 1,
+          "unit": "kg",
+          "price": 280
+        }
+      ],
+      "totalAmount": 280,
+      "status": "Pending",
+      "createdAt": "2026-06-02T09:08:32.512Z",
+      "updatedAt": "2026-06-02T09:08:32.512Z"
+    }
+  ],
+  "users": [
+    {
+      "_id": "vngylelmpgq6aak",
+      "name": "KBD Admin",
+      "email": "rushikeshpatil4850@gmail.com",
+      "password": "$2a$10$qOqngX1AQQIOQSB2ZlIWR.F3odaG/LXhSEpCEBg5wsj37OinnrWUK",
+      "role": "admin",
+      "createdAt": "2026-05-22T09:36:30.620Z",
+      "updatedAt": "2026-05-22T09:36:30.621Z"
+    },
+    {
+      "_id": "19zkz6ampw5imqc",
+      "name": "Awez khan",
+      "email": "awezkhan@gmail.com",
+      "password": "$2a$10$40qajc93lxfIQsQMmiSsSOmHnyrPOA35cQYeJat3KBGnhiXJYxC9q",
+      "role": "customer",
+      "createdAt": "2026-06-02T04:42:33.492Z",
+      "updatedAt": "2026-06-02T04:42:33.492Z"
+    }
+  ]
+}
