@@ -53,10 +53,8 @@ const PORT = process.env.PORT || 5000;
 
 // Connect to DB (with automatic JSON file database fallback)
 connectDB().then(() => {
-  // Seed DB with default admin and mock agricultural data in development
-  if (process.env.NODE_ENV !== 'production') {
-    seedDatabase();
-  }
+  // Seed DB with default admin and mock agricultural data (Safe for prod as it checks count === 0)
+  seedDatabase();
 }).catch(console.error);
 
 if (process.env.NODE_ENV !== 'production') {
