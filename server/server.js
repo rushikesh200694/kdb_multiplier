@@ -1,8 +1,6 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import path from 'path';
-import fs from 'fs';
 import { connectDB } from './config/db.js';
 import authRoutes from './routes/authRoutes.js';
 import productRoutes from './routes/productRoutes.js';
@@ -20,21 +18,34 @@ const app = express();
 // Middleware
 app.use(compression());
 app.use(cors({
-  origin: '*', // In development, allow access from any origin
+  origin: '*',
   credentials: true
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Ensure uploads folder exists
-const __dirname = path.resolve();
-const uploadPath = path.join(__dirname, 'uploads');
-if (!fs.existsSync(uploadPath)) {
-  fs.mkdirSync(uploadPath, { recursive: true });
-}
+// Ensure DB is connected before handling any API request
+let dbReady = false;
+let dbPromise = null;
 
-// Static folders
-app.use('/uploads', express.static(uploadPath));
+const ensureDB = async (req, res, next) => {
+  if (dbReady) return next();
+  try {
+    if (!dbPromise) {
+      dbPromise = connectDB().then(async () => {
+        await seedDatabase();
+        dbReady = true;
+      });
+    }
+    await dbPromise;
+    next();
+  } catch (error) {
+    console.error('DB connection failed:', error.message);
+    res.status(500).json({ message: 'Database connection failed', error: error.message });
+  }
+};
+
+app.use('/api', ensureDB);
 
 // API routes
 app.use('/api/auth', authRoutes);
@@ -50,12 +61,6 @@ app.get('/', (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
-
-// Connect to DB (with automatic JSON file database fallback)
-connectDB().then(() => {
-  // Seed DB with default admin and mock agricultural data (Safe for prod as it checks count === 0)
-  seedDatabase();
-}).catch(console.error);
 
 if (process.env.NODE_ENV !== 'production') {
   app.listen(PORT, () => {

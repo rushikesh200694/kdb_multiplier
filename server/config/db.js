@@ -1,46 +1,33 @@
 import mongoose from 'mongoose';
-import fs from 'fs';
-import path from 'path';
 
-const __dirname = path.resolve();
-const DATA_DIR = path.join(__dirname, 'data');
-const JSON_DB_PATH = path.join(DATA_DIR, 'db.json');
-
-// Initialize folder and JSON file if not exists
-if (!fs.existsSync(DATA_DIR)) {
-  fs.mkdirSync(DATA_DIR, { recursive: true });
-}
-if (!fs.existsSync(JSON_DB_PATH)) {
-  fs.writeFileSync(JSON_DB_PATH, JSON.stringify({
-    products: [],
-    visits: [],
-    reviews: [],
-    orders: [],
-    users: []
-  }, null, 2));
-}
+let cached = global._mongoConnection || null;
 
 export let useFallback = false;
 
 export const connectDB = async () => {
+  if (cached && mongoose.connection.readyState === 1) {
+    return cached;
+  }
+
   try {
     mongoose.set('strictQuery', false);
-    // Accept both MONGO_URI and MONGODB_URI (common naming difference)
+    // Accept both MONGO_URI and MONGODB_URI
     const mongoUri = process.env.MONGO_URI || process.env.MONGODB_URI || 'mongodb://localhost:27017/kbd-multiplier';
-    console.log(`Attempting to connect to MongoDB...`);
-    
-    const conn = await mongoose.connect(mongoUri, {
-      serverSelectionTimeoutMS: 10000 // 10s for production cold starts
+    console.log('Attempting to connect to MongoDB...');
+
+    cached = await mongoose.connect(mongoUri, {
+      serverSelectionTimeoutMS: 10000
     });
-    console.log(`MongoDB Connected: ${conn.connection.host}`);
+    global._mongoConnection = cached;
+    console.log(`MongoDB Connected: ${cached.connection.host}`);
     useFallback = false;
+    return cached;
   } catch (error) {
     console.warn(`MongoDB Connection Failed: ${error.message}`);
-    console.warn(`>>> FALLING BACK TO LOCAL FILE SYSTEM DATABASE: ${JSON_DB_PATH} <<<`);
     useFallback = true;
+    throw error;
   }
 };
 
 export const getFallbackState = () => useFallback;
 export const setFallbackState = (state) => { useFallback = state; };
-export { JSON_DB_PATH };
